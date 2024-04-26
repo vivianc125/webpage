@@ -9,6 +9,9 @@ import linkedIcon from '../components/images/linkedin-icon.png'
   <main>
     <div class="stars-container" id = "top">
       <div class="head-template">
+          <div class="sparkle" style="top: 10%; left: 15%;"></div>
+          <div class="sparkle" style="top: 20%; left: 72%;"></div>
+          <div class="sparkle" style="top: 25%; left: 34%;"></div>
           <div class="sparkle" style="top: 30%; left: 50%;"></div>
           <div class="sparkle" style="top: 42%; left: 95%;"></div>
           <div class="sparkle" style="top: 50%; left: 55%;"></div>
@@ -16,6 +19,11 @@ import linkedIcon from '../components/images/linkedin-icon.png'
           <div class="sparkle" style="top: 70%; left: 35%;"></div>
           <div class="sparkle" style="top: 85%; left: 75%;"></div>
           <div class="sparkle" style="top: 90%; left: 15%;"></div>
+          <div class="move-page">
+            <a href="#bottom" class="move-page">
+              <i class="bi bi-chevron-double-down" id=""></i> 
+            </a>
+          </div>
         <div class="intro">
           <b-row>
             <h1>welcome!</h1>
@@ -25,11 +33,7 @@ import linkedIcon from '../components/images/linkedin-icon.png'
             <img class="myImage" :src="testImage">
           </b-row>
         </div>
-        <div class="move-page">
-          <a href="#bottom">
-            <i class="bi bi-chevron-double-down" id=""></i> 
-          </a>
-        </div>
+
       </div>
 
     </div>
@@ -68,21 +72,20 @@ import linkedIcon from '../components/images/linkedin-icon.png'
 <style>
 .head-template{
   margin:10px;
-  background-color:#EBEFFC;
+  background-color:#c3d0fb;
 }
 .intro{
   margin:10px;
   display:flex;
   justify-content:space-around;
-  height:70vh;
+  height:80vh;
   align-items:center;
 }
 
 .move-page{
-  display:flex;
-  justify-content:space-around;
-  align-items:center;
-  
+  position: absolute;
+  top:80%;
+  left:50%;
 }
 .bi-chevron-double-down {
     color: #000; 
@@ -105,7 +108,6 @@ import linkedIcon from '../components/images/linkedin-icon.png'
 }
 
 .about{
-  margin:1rem;
   width:100%;
 }
 
