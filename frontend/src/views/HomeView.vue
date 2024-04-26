@@ -9,16 +9,13 @@ import linkedIcon from '../components/images/linkedin-icon.png'
   <main>
     <div class="stars-container" id = "top">
       <div class="head-template">
-          <div class="sparkle" style="top: 5%; left: 8%;"></div>
-          <div class="sparkle" style="top: 10%; left: 20%;"></div>
-          <div class="sparkle" style="top: 15%; left: 73%;"></div>
-          <div class="sparkle" style="top: 20%; left: 13%;"></div>
           <div class="sparkle" style="top: 30%; left: 50%;"></div>
-          <div class="sparkle" style="top: 50%; left: 75%;"></div>
+          <div class="sparkle" style="top: 42%; left: 95%;"></div>
           <div class="sparkle" style="top: 50%; left: 55%;"></div>
+          <div class="sparkle" style="top: 60%; left: 12%;"></div>
           <div class="sparkle" style="top: 70%; left: 35%;"></div>
-          <div class="sparkle" style="top: 90%; left: 15%;"></div>
           <div class="sparkle" style="top: 85%; left: 75%;"></div>
+          <div class="sparkle" style="top: 90%; left: 15%;"></div>
         <div class="intro">
           <b-row>
             <h1>welcome!</h1>
@@ -44,7 +41,7 @@ import linkedIcon from '../components/images/linkedin-icon.png'
             <h1>it's nice to meet you!</h1>
             <p>my name is vivian chen, and i am a senior at the university of houston.</p>
             <p>my favorite passtimes are listening to true-crime documentaries and spending time with my wonderful pup, charli!</p>
-            <a href="/about">learn more about me >> </a>
+            <a href="/about">learn more about me >></a>
           </div>
 
           <b-container class="link-nav">
@@ -72,13 +69,12 @@ import linkedIcon from '../components/images/linkedin-icon.png'
 .head-template{
   margin:10px;
   background-color:#EBEFFC;
-  height:80vh;
 }
 .intro{
   margin:10px;
   display:flex;
   justify-content:space-around;
-  height:80%;
+  height:70vh;
   align-items:center;
 }
 
@@ -86,6 +82,7 @@ import linkedIcon from '../components/images/linkedin-icon.png'
   display:flex;
   justify-content:space-around;
   align-items:center;
+  
 }
 .bi-chevron-double-down {
     color: #000; 
@@ -96,14 +93,14 @@ import linkedIcon from '../components/images/linkedin-icon.png'
 }
 
 .bi-chevron-double-down:hover{
-  color:black;
   transform: translateY(-10px);
+  color: #555; /* Darken the icon to provide visual feedback */
 }
 .bottom{
   margin:10px;
   display:flex;
   justify-content:space-around;
-  height:80vh;
+  height:97vh;
   align-items:center;
 }
 
@@ -134,14 +131,6 @@ import linkedIcon from '../components/images/linkedin-icon.png'
       height: 100%;
       
   }
-  .star {
-      position: absolute;
-      width: 3px;
-      height: 3px;
-      background: rgb(255, 255, 255);
-      border-radius: 50%;
-      animation: twinkle 1s infinite alternate ease-in-out;
-  }
 
   .sparkle {
     position: absolute;
@@ -149,7 +138,7 @@ import linkedIcon from '../components/images/linkedin-icon.png'
     height: 12px;
     background: radial-gradient(circle, white, transparent 70%);
     border-radius: 50%;  /* Ensures the central part is circular */
-    animation: twinkle 2s infinite alternate ease-in-out;
+    animation: twinkle 3s infinite alternate ease-in-out;
 }
 
 @keyframes twinkle {
@@ -159,7 +148,7 @@ import linkedIcon from '../components/images/linkedin-icon.png'
     }
     50% {
         transform: scale(1.2);
-        opacity: 0.5;
+        opacity: 0.1;
     }
     100% {
         transform: scale(1);
